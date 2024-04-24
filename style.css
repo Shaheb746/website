@@ -1,0 +1,261 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body{
+
+    height:100%;
+    width:100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+}
+#main
+{
+    width:100%;
+    height:100vh;
+    background: linear-gradient(to top left, rgba(0, 0, 0, 0.956),rgb(188, 255, 5));
+}   
+nav{
+   position: fixed;
+    width:100%;
+    height:10vh;
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0vw 10vw;
+    
+    
+}
+.cen_nav a{
+    font-size:1.2vw;
+    text-decoration: none;
+    color:#fff;
+    padding: 0vw 3vw;
+
+  
+}
+#logo{
+    left:5%;
+    width:85px;
+    height:65px;
+   
+}
+nav span{
+    font-size:4vw;
+    color: #fff;
+}
+nav a{
+    font-size:1.2vw;
+    color: #fff;
+    text-decoration: none;
+}
+ a:hover{
+    color:rgb(151, 250, 13); 
+  
+    
+} 
+.cen_nav:hover{
+
+    padding: 0px 100px;
+   
+
+}  
+/* .one{
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    /* position: relative; /* Position relative for absolute positioning of items */
+    /* animation: scrollAnimation 30s linear infinite;  */ */
+   
+ */
+.scrolling-item {
+    width: 1200px;
+    height: 700px;
+    background-color: #ff0000;
+    display: inline-block; /* Display items horizontally */
+    margin-left: 20px; /* Adjust spacing between items */
+}
+
+.scrolling-item img {
+    width: 1200px;
+    height: 700px;
+}
+
+ @keyframes scrollAnimation {
+
+    
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Adjust this value based on item width and spacing */
+    }
+
+    
+}  
+
+.scrolling-wrapper {
+    position: absolute;
+    right: 0; /* Start from the right side */
+    white-space: nowrap; /* Prevent items from wrapping */
+    animation: scrollAnimation 10s linear infinite; /* Adjust animation duration */
+}
+.para{
+    display: flex;
+    position: absolute;
+    color:#fff;
+}
+
+.submenu-wrap
+{
+    position: absolute;
+    top:100%;
+    right:10%;
+    width:320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    
+}
+.submenu-wrap.open-menu{
+    max-height: 400px;
+
+}
+.submenu{
+    background-color: #fff;
+    padding:20px;
+    margin:10px;
+}
+.userinfo{
+    display:flex;
+    align-items: center;
+}
+.userinfo span{
+
+    color: black;
+}
+.userinfo h3{
+
+    font-weight: 500;
+}
+
+.userinfo span{
+
+    width:60px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.submenu hr{
+
+    border:0;
+    height:1px;
+    width:100%;
+    background: #ccc;
+    margin:15px 0px 10px;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin:6px 0;
+}
+.sub-menu-link p{
+    width:100%;
+    font-weight: 400;
+}
+
+.sub-menu-link span{
+    width:40px;
+    background: #e5e5e5;
+    color: black;
+    font-weight: 600;
+    border-radius: 50%;
+    padding:8px;
+    margin-right: 15px;
+    transition: transform 0.5s;
+}
+.arrow{
+    font-size:15px;
+    border-radius: 50%;
+}
+.sub-menu-link:hover span{
+
+    transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+  font-weight:600;
+}
+.two{
+    display:flex;
+    width:100%;
+    height:100vh;
+    background-color:rgb(101, 209, 19) ;
+}
+.two video{
+    position: absolute;
+    width:800px;
+    height:500px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+
+}
+.lft-two{
+
+    width:60%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:5vh;
+
+}
+.rgt-two{
+
+    width:40%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:5vh;
+
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+   
+}
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: flex;
+    width: 1400px;
+    height: 550px;
+    margin-top: 8%;
+    object-fit: cover;
+  }
+
+
+
+
